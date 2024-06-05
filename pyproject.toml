@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "lazytimetrack"
+version = "0.1.0"
+description = "automatic timepunch tool"
+authors = ["examinare000 <examinare000@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+selenium = "^4.20.0"
+webdriver-manager = "^4.0.1"
+playwright = "^1.43.0"
+black = "^24.4.2"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.2.0"
+
+[tool.poetry.scripts]
+timepunch = 'lazytimetrack.timetrack:auto_punch'
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
